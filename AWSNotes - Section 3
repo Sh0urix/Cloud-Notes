@@ -1,0 +1,27 @@
+Notes for AWS
+
+AWS Global Infrastructure
+
+AWS infrastructure works from:
+Regions
+  All around the world. Ex. US-East-1, EU-West-3...etc. This is a cluster of data centers. Most AWS services are region-scoped. 
+  How to choose which AWS region? Things to consider are Compliance, Proximy (Latency), which services are available (not all services are available in each region), and pricing. 
+Availability Zones
+  These are the zones within a region usually 3, minimum is 3 and the max is 6. Example: AWS Region Syndney: ap-southeast-2. There are 3 availability zones within that region: ap-southeast-2a, ap-southeast-2b, and ap-southeast-2c.
+  Each availability zone (AZ) is one or more discrete data centers with redundant power, networking and connectivity. Each AZ is seperate from themselves so that they're isolated from disasters  
+Local Zones
+Points of Precense
+Network
+
+Tour of the AWS console
+AWS has global services:
+Identity and ACcess Management (IAM)
+Route 53 (DNS)
+Cloudfront (Content Delivery Network)
+WAF (Web Application Firewall)
+
+Most AWS services are region-scoped:
+Amazon EC2 (Infrastructure as a Service)
+Elastic Beanstalk (Platform as a Service)
+Lamba (Function as a Service)
+Rekognition (Software as a Service)
