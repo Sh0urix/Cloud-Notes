@@ -1,1 +1,25 @@
+IAM = Identity and Access Management - Global Service
+
+Root account is created by default, shouldn't be used or shared. 
+Users are people within your organization, and can be grouped. 
+
+Groups can only contain users, not other groups
+Users don't have to belong to a group, and users can belong to multiple groups. 
+
+IAM Permissions
+Users or groups can be assigned JSON documents called Policies. These policies define the permissions of the users. Utilize the least privilege principle. 
+
+IAM Policy Structure
+Consists of:
+  Version - Policy language version, always include "2012-10-17" etc. 
+  Id - an identifier for the policy (optional)
+  Statement - one or more individual statement (required.
+
+Statement consists of:
+  Sid: an identifier for the statement
+  Effect: whether the statement allows or denies access (Allow, Deny)
+  Principal: Which account/user/role to which this policy applied to
+  Action: List of actions this policy allows or denies
+  Resource: List of resources to which the actions applied to
+  Conditon: conditions for when this policy is in effect. 
 
