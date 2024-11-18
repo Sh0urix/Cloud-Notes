@@ -23,3 +23,55 @@ Statement consists of:
   Resource: List of resources to which the actions applied to
   Conditon: conditions for when this policy is in effect. 
 
+Permissions can be granted via group or inline (to a single user). 
+
+IAM - Password policy 
+You can edit Password policies via Account Settings. The default password policy is 8 characters long and must include an uppercase, lowercase, numbers and non-alphanumeric character. 
+
+IAM - MFA 
+Multifactor Authentication can be done via virtual MFA, or hard token. This can be done via Security Credentials on the top right menu. 
+
+IAM - Acccess Keys
+  These keys are generated through the AWS console. They are a secret, just like a password. Don't share them. Users manage their own keys.
+  Access Key ID = Username
+  Secret Access Key = Password
+
+IAM - Command Line Interface (CLI)
+A tool that enables you to interact with AWS services using commands in your commmand-line shell
+  Direct access to the public APIs of AWS services
+  You can develop scripts to manage your resources, used as an alternative to using AWS management console (GUI)
+
+AWS Software Developer Kit (SDK)
+Language specific API's (Set of libraries)
+Enables you to access anad manage AWS services programmatically
+Embedded within your application
+Supports: SDKs (JS, Python, PHP, .NET, Ruby, Java, Go, Node.js)
+  AWS CLI is based on Python SDK
+
+Once Access Keys are created and CLI is chosen to be used for interacting with the tenant. In command line you must aws configure first
+
+CloudShell - Browser based shell with AWS CLI access from the AWS management console
+You can use this shell like a linux distro with its file formatting
+
+IAM roles for Services
+some AWS services will need to perform actions on your behalf. To do so we will assign permissions to AWS services with IAM Roles. 
+ex. EC2 Instance needs an IAM role to access other AWS services.
+
+IAM Security Tools
+IAM Credential Report (Account level) - a report that lists all your account's users and status of their various credentials
+IAM Access Advisor (User level) - Access advisor shows the service permissions granted to a user and when those services were last accessed. 
+
+IAM Guidelines & Best Practices
+Don't use root account except for AWS account setup.
+One physical user = one AWS user
+Assign users to groups and assign permissions to groups
+Create a strong password policy
+Use and enforce the use of MFA
+Create and use roles for giving permissions to AWS services
+Use Access keys for programmatic access (CLI / SDK)
+Audit permissions of your account using IAM credentials report and IAM access advisor
+
+
+
+
+
