@@ -26,6 +26,27 @@ EC2 user data is used to automate boot tasks such as: install updates, install s
   This script runs with root user, so it has sudo privileges. 
 t2.micro is part of the AWS free tier (up to 750 hours per month)
 
+EC2 Instance Types - Overview
+Each instance type are optimised for different use cases
+AWS uses the following naming convention:
+  m5.2xlarge
 
+m: instance class 
+5: generation of instance
+2xlarge: size within the instance class
 
+General purpose: Great for diversity of workloads such as web servers or code repositories
 
+Compute Optimized: Great for compute-intensive tasks that require high performance processors
+
+Memory Optimized: Fast perforamnce for workloads that process large data sets in memory
+
+Storage Optimized: Great for storage-intensive tasks that require high, sequential read and write access to large data sets on local storage
+
+Security Groups: fundamental network security in AWS
+  control how traffic is allowed into or out of our EC2 instances
+  Security groups only contain allow rules
+  Security Groups rules can reference by IP or by security group
+  Can be attached to multiple instances
+  Locked down to a region / VPC combination
+  It's good to maintain one separate security group for SSH access. 
